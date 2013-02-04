@@ -16,7 +16,7 @@ Falls jemand dazu beitragen will, kann er gerne das Repository forken und einen 
 - [Linalg HS08 ETHZ Zusammenfassung](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/08/LinAlg/spoerrip/) von Pascal Spörri
 - [Linalg HS06 ETHZ Zusammenfassung](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/07/bthorben/LinAlg/) von Thorben Bochenek, Licia Huber, Remi Meier und Pascal Spörri
 
-Herzlichen Danke allen, die ihre Zusammenfassungen öffentlich zur Verfügung.
+Herzlichen Danke allen, die ihre Zusammenfassungen zur Verfügung getellt haben.
 
 (Alle Mitwirkenden sind im README der einzelnen Zusammenfassungen.)
 
