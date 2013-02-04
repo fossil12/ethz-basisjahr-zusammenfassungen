@@ -8,8 +8,8 @@ Diese Zusammenfassung wurde für die FS13 D-INFK Analysis 1&2 Prüfung an der ET
 
 # Ursprung
 
-- [Leo Büttike](https://github.com/leobuettiker/eth-summaries)
-- [Gregor Wegberg](https://github.com/groggi/eth-bsc-analysis-zfp)
+- [ETH Summaries 2012](https://github.com/leobuettiker/eth-summaries) von Leo Büttike
+- [ETH BSc Analysis ZFP 2012](https://github.com/groggi/eth-bsc-analysis-zfp) von Gregor Wegberg
 
 ## Mitwirkende
 
