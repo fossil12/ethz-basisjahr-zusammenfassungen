@@ -1,0 +1,72 @@
+%%% Zusamenfassung Lin. Alg. - HS 12 - ETH Zürich %%%
+% Dieses Werk ist unter der folgenden Lizenz lizenziert:
+% Namensnennung-Keine kommerzielle Nutzung-Weitergabe unter gleichen Bedingungen ]
+% 2.5 Schweiz - http://creativecommons.org/licenses/by-nc-sa/2.5/ch/
+% (c) 2013 by David Keller
+%
+% Some content:
+% (C) 2008 Thorben Bochenek, Licia Huber, Remi Meier, Pascal Spörri
+% (C) 2009 Pascal Spörri
+
+
+\documentclass[11pt, a4paper, twocolumn]{article} % scrartcl
+
+%% GENERAL %%
+% Umlaute...
+\usepackage[utf8]{inputenc}
+% Trennung von Wörtern mit Umlauten
+\usepackage[T1]{fontenc}
+% Damit es auch Deutsch kann ;)
+\usepackage[ngerman]{babel}
+% Images & co..
+\usepackage{graphicx}
+
+
+%% MATH %%
+% math Formulas
+\usepackage{amsmath}
+% Can now use \mathbb{...}
+% (via http://mirror.switch.ch/ftp/mirror/tex/info/symbols/comprehensive/symbols-a4.pdf) 
+\usepackage{amssymb}
+
+
+%% TEMPLATE & LAYOUT %%
+% Load Abstract Template
+\usepackage{tbabstract}
+% Someting with colons... ;)
+\usepackage{multicol}
+\columnsep24pt
+\columnseprule0pt
+% Smaller captions
+% (unsure if it really does something
+\usepackage[font=small]{caption}
+
+
+%% META %%
+\title{Zusammenfassung Lineare Algebra \\ HS 12 \\ ETH Zürich}
+\author{David~Keller}
+%\date{}
+
+%% SHORTCUTS %%
+% Matrices
+\newcommand{\mA}	{\mathbf{A}}
+\newcommand{\mB}	{\mathbf{B}}
+\newcommand{\mC}	{\mathbf{C}}
+
+\newcommand{\E}	{\mathbb{E}}
+
+\newcommand{\spn}[1]	{\mathsf{span} \ \{#1\}}
+
+
+\begin{document}
+
+%	\maketitle
+%	Dieses Dokument ist unter der cc-by-nc-sa 2.5 ch (http://creativecommons.org/licenses/by-nc-sa/2.5/ch/) Lizenz lizenziert
+%%	\tableofcontents	
+%  	\newpage
+
+	\input{matrizen}
+	\input{vektorraeume}
+
+
+\end{document}
