@@ -8,13 +8,13 @@ Falls jemand dazu beitragen will, kann er gerne das Repository forken und einen 
 
 ## Analysis
 
-- [Leo Büttike](https://github.com/leobuettiker/eth-summaries)
-- [Gregor Wegberg](https://github.com/groggi/eth-bsc-analysis-zfp)
+- [ETH Summaries 2012](https://github.com/leobuettiker/eth-summaries) von Leo Büttike
+- [ETH BSc Analysis ZFP 2012](https://github.com/groggi/eth-bsc-analysis-zfp) von Gregor Wegberg
 
 ## Lineare Algebra
 
-- [Pascal Spörri](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/08/LinAlg/spoerrip/) 
-- [Thorben Bochenek, Licia Huber, Remi Meier und Pascal Spörri](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/07/bthorben/LinAlg/)
+- [Linalg HS08 ETHZ Zusammenfassung](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/08/LinAlg/spoerrip/) von Pascal Spörri
+- [Linalg HS06 ETHZ Zusammenfassung](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/07/bthorben/LinAlg/) von Thorben Bochenek, Licia Huber, Remi Meier und Pascal Spörri
 
 Herzlichen Danke allen, die ihre Zusammenfassungen öffentlich zur Verfügung.
 
