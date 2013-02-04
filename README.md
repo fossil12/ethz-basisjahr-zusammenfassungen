@@ -6,13 +6,15 @@ Falls jemand dazu beitragen will, kann er gerne das Repository forken und einen 
 
 # Quellen der ursprünglichen ZF
 
-- Analysis: 
-	- [Leo Büttike](https://github.com/leobuettiker/eth-summaries)
-	- [Gregor Wegberg](https://github.com/groggi/eth-bsc-analysis-zfp)
+## Analysis
 
-- Lineare Algebra:
-	- [Pascal Spörri](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/08/LinAlg/spoerrip/) 
-	- [Thorben Bochenek, Licia Huber, Remi Meier und Pascal Spörri](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/07/bthorben/LinAlg/)
+- [Leo Büttike](https://github.com/leobuettiker/eth-summaries)
+- [Gregor Wegberg](https://github.com/groggi/eth-bsc-analysis-zfp)
+
+## Lineare Algebra
+
+- [Pascal Spörri](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/08/LinAlg/spoerrip/) 
+- [Thorben Bochenek, Licia Huber, Remi Meier und Pascal Spörri](https://svn.vis.ethz.ch/svn/zusammenfassungen/Basisjahr/07/bthorben/LinAlg/)
 
 Herzlichen Danke allen, die ihre Zusammenfassungen öffentlich zur Verfügung.
 

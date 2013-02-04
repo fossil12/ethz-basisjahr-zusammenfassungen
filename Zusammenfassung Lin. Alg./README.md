@@ -2,7 +2,7 @@
 
 Diese Zusammenfassung wurde für die HS12 D-INFK Lineare Algebra Prüfung an der ETH Zürich verfasst. Ich gebe keine Garantie auf Vollständigkeit oder Korrektheit. Die Vorlesung wurde von Prof. V. Gradinaru und Prof. M. Pollefeys gehalten.
 
-# Beitragende
+# Mitwirkende
 
 - David Keller
 

@@ -2,7 +2,7 @@
 
 Diese Zusammenfassung wurde für die FS13 D-INFK Analysis 1&2 Prüfung an der ETH Zürich verfasst. Ich gebe keine Garantie auf Vollständigkeit oder Korrektheit. Die Vorlesung wurde von Prof. M. Einsiedler gehalten.
 
-# Beitragende
+# Mitwirkende
 
 - David Keller
 
@@ -11,7 +11,7 @@ Diese Zusammenfassung wurde für die FS13 D-INFK Analysis 1&2 Prüfung an der ET
 - [Leo Büttike](https://github.com/leobuettiker/eth-summaries)
 - [Gregor Wegberg](https://github.com/groggi/eth-bsc-analysis-zfp)
 
-## Beitragende
+## Mitwirkende
 
 - Gregor Wegberg
 - Leo Büttiker
