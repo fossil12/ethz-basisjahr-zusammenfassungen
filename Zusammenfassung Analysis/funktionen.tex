@@ -4,8 +4,12 @@ $D$ ein Element aus $W$ zugeordnet wird. $D$ ist der \underline{Definitionsberei
 (Bereich der gültigen Eingaben) und $W$ der \underline{Wertebereich}
 (Bereich der gültigen Ausgaben).
 
+\underline{Bildmenge}: $f(A) = \{f(a) : a \in A \}$
+
 Ist $f: M \rightarrow N$ und $g: N \rightarrow P$, so ist die Funktion $g \circ f: M \rightarrow P$,
 $(g \circ f)(x) = g(f(x))$, eine \underline{Komposition} von $f$ und $g$.
+
+\includegraphics[scale=0.25]{komposition.pdf}
 
 \subsection{Regeln}
 \begin{itemize}
@@ -47,7 +51,7 @@ Sei $f: M \rightarrow N$, $f$ ist injektiv, wenn folgendes gilt:
 \begin{itemize}
 	\item $\forall x_1, x_2 \in M: x_1 \neq x_2 \Rightarrow f(x_1) \neq f(x_2)$
 	\item $\forall x_1, x_2 \in M: f(x_1) = f(x_2) \Rightarrow x_1 = x_2$
-	\item $\forall y \in N: \exists !x \in M: f(x) = y \lor \lnot(\exists x \in M: f(x) = y)$: wenn zu jedem $y \in N$ höchstens (genau eins oder keins) ein $x \in M$ existiert mit $f(x) = y$
+	\item $\forall y \in N: \nexists x \in M: f(x) = y \lor \lnot(\exists x \in M: f(x) = y)$: wenn zu jedem $y \in N$ höchstens (genau eins oder keins) ein $x \in M$ existiert mit $f(x) = y$
 \end{itemize}
 
 \includegraphics[scale=0.5]{injektiv.png}

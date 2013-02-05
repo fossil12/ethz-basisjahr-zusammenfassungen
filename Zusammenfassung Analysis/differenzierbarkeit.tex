@@ -2,7 +2,8 @@
 \subsection{Definition}
 $f$ ist in $a \in I$ differenzierbar mit der Ableitung $f'(a)$, wenn
 \[
-\lim_{x \to a} \frac{f(x) - f(a)}{x - a} =: f'(a) = \frac{d}{dx}f(a)
+\lim_{x \to a} \frac{f(x) - f(a)}{x - a} = \lim_{h \to 0} \ \frac{f(x+h)-f(x)}{h}
+=: f'(a) = \frac{d}{dx}f(a)
 \]
 existiert.
 
@@ -12,7 +13,7 @@ auch $f \in C^1(I)$. $C^n(I)$ ist die Menge der $n$-mal stetig differenzierbaren
 Funktionen über dem Intervall $I$.
 
 \subsection{Mittelwertsatz (Satz von Lagrange)}
-Ist $f$ au $[a,b]$ stetig und in $]a, b[$ differenzierbar, so gibt es ein $c
+Ist $f$ auf $[a,b]$ stetig und in $]a, b[$ differenzierbar, so gibt es ein $c
 \in ]a,b[$ mit
 \[
 \frac{f(b) - f(a)}{b-a} = f'(c)

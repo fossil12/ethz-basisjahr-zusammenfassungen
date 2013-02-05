@@ -36,7 +36,7 @@ Zu Zeigen: $(A \cup B)^c = A^c \cap B^c$ wobei $A, B, C$ Untermengen von $X$ sin
 
 \subsection{bekannte Mengen}
 \begin{description}
-	\item[$\N$, natürliche Zahlen:] $\{1, 2, 3, \ldots\}$
+	\item[$\N$, natürliche Zahlen:] $\{0, 1, 2, 3, \ldots\}$
 	\item[$\Z$, ganze Zahlen:] $\{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}$
 	\item[$\Q$, rationale Zahlen:] $\{\frac{p}{q} | p \in \Z, q \in \N \backslash \{0\}\}$
 	\item[$\R$, reelle Zahlen:] ``alle'' Zahlen, die wir im Alltag brauchen. Genauer: rationale Zahlen und die irrationalen Zahlen.
@@ -55,7 +55,9 @@ $[a,b]$ & $\{x \in \R | a \leq x \leq b\}$ & abgeschlossen \\\hline
 Achtung: Ist $a$ oder $b$ ``unendlich'' ($\pm \infty$), so muss es auf der entsprechenden Seite offen sein: z.B. $[a, $\hl{$\infty[$}, \hl{$]-\infty$}$, b[$.
 Unendlich ist keine konkrete Zahl und kann somit nicht gleich einer anderen Zahl sein, was nötig wäre für $\leq$. \\
 %nächster abschnitt aus wikipedia http://de.wikipedia.org/wiki/Intervall_(Mathematik)#Verallgemeinerung
-In der Topologie sind reelle Intervalle Beispiele für zusammenhängende Mengen. Offene Intervalle sind offene Mengen und abgeschlossene Intervalle sind abgeschlossene Mengen. Halboffene Mengen sind weder offen noch abgeschlossen. Abgeschlossene beschränkte Intervalle sind kompakt.
+In der Topologie sind reelle Intervalle Beispiele für zusammenhängende Mengen. Offene Intervalle sind offene Mengen und abgeschlossene Intervalle sind abgeschlossene Mengen. Halboffene Mengen sind weder offen noch abgeschlossen. 
+
+Abgeschlossene beschränkte Intervalle sind \underline{kompakt}.
 
 \subsubsection{Beschränktheit}\index{beschränkt}
 Die Menge $M$ sei eine nicht-leere Teilmenge von $\R$ ($M \subset \R, M \neq \emptyset$).
@@ -116,6 +118,8 @@ Hat man zwischen zwei Mengen eine Funktion $f: A \rightarrow B$ gefunden, die bi
 so gibt es eine Umkehrfunktion, die ebenfalls Bijektiv ist. Diese bildet jedes Element von $B$
 auf eines aus $A$ ab.
 
+Gleiche Elemente werden nur einmal gezählt: $\{1,2,3\} = \{1,2,3,2,3\}$
+
 \subsubsection{Abzählbar}\index{abzählbar}
 Eine Menge $A$ ist abzählbar, wenn sie gleichmächtig zur Menge $\N$ (natürliche Zahlen) ist.
 
@@ -134,6 +138,11 @@ f(n) = \left\{
 	\end{array}
 \right.
 \end{equation*}
+\todo{$U$ kann doch nach Def. gar nicht negtiv sein...?}
+% f(1) = 1
+% f(2) = -3
+% f(3) = 3
+% (andere Lsg suchen, um dies zu beweisen)
 
 Diese Funktion ist offensichtlich bijektiv (sonst Umkehrfunktion angeben), wodurch $U$ gleichmächtig $\N$ ist.
 

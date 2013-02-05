@@ -24,17 +24,16 @@ Für \underline{konvergente} Reihen gilt:
 \]
 
 \subsection{Konvergenzkriterien}
-\begin{tabular}{|l|}
-\hline
-	Konvergiert $\sum_{n=1}^\infty a_n$, so ist $\lim_{n \to \infty} a_n = 0$.\\
-	Wenn also $\lim_{n \to \infty} a_n \neq 0$, so konvergiert die Reihe
-	\underline{nicht}\\
-\hline
-\end{tabular}
 
 \subsubsection{Reihen Kriterien}
 Achtung. Die nachfolgenden Kriterien sagen nur aus, ob die Reihen konvergiert
 oder nicht. Sie sagen \underline{nicht} aus, gegen was sie konvergieren!
+
+\paragraph{Cauchy-Kriterium}
+
+Konvergiert $\sum_{n=1}^\infty a_n$, so ist $\lim_{n \to \infty} a_n = 0$.\\
+Wenn also $\lim_{n \to \infty} a_n \neq 0$, so konvergiert die Reihe
+\underline{nicht}.
 
 \paragraph{Quotientenkriterium}
 \[
@@ -54,6 +53,14 @@ q > 1 & \Rightarrow \sum_{n=1}^\infty a_n \text{ divergiert}
 \end{cases}
 \]
 
+\paragraph{Majorantenkriterium}
+Ist $|a_n| \leq b_n$ und $\sum_{n=1}^\infty b_n$ konvergent, so konvergiert
+$\sum_{n=1}^\infty a_n$ absolut.
+
+\paragraph{Minorantenkriterium}
+Ist $a_n \geq b_n \geq 0$ und $\sum_{n=1}^\infty b_n$ divergent, so divergiert
+$\sum_{n=1}^\infty a_n$
+
 \paragraph{Leibnizkriterium}
 Wenn gilt:
 \begin{itemize}
@@ -62,14 +69,6 @@ Wenn gilt:
   \item $(|a_n|)$ ist monoton fallend
 \end{itemize}
 \ldots dann konvergiert $\sum_{n=1}^\infty a_n$
-
-\paragraph{Majorantenkriterium}
-Ist $|a_n| \leq b_n$ und $\sum_{n=1}^\infty b_n$ konvergent, so konvergiert
-$\sum_{n=1}^\infty a_n$ absolut.
-
-\paragraph{Minorantenkriterium}
-Ist $a_n \geq b_n \geq 0$ und $\sum_{n=1}^\infty b_n$ divergent, so divergiert
-$\sum_{n=1}^\infty a_n$
 
 \subsection{Potenzreihe}
 Die Potenzreihe hat die allgemeine Form

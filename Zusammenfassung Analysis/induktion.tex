@@ -14,11 +14,11 @@ Grundlägende Struktur um die Aussage $A(n)$ zu beweisen:
 \subsection{Beispiel}
 		Es ist zu beweisen, dass für jedes $n \in \N$ folgendes gilt: $1 + 2 + 3 + \ldots + n = \frac{n(n + 1)}{2}$		
 		
-		Lemma: $\forall \in \N. 1 + 2 + 3 + \ldots + n = \frac{n(n + 1)}{2}$ \\
+		Lemma: $\forall \in \N: 1 + 2 + 3 + \ldots + n = \frac{n(n + 1)}{2}$ \\
 		
 	Beweis: \\
 		  Sei $P(n) \equiv 1 + 2 + 3 + \ldots + n = \frac{n(n + 1)}{2}$. \\
-		  Wir zeigen $\forall \in \N. P(n)$ mit vollständiger Induktion.\\
+		  Wir zeigen $\forall \in \N: P(n)$ mit vollständiger Induktion.\\
 		
 		Induktionsanfang: Zeige $P(0)$. \\
 		 $$0 =  \frac{0(0 + 1)}{2}$$
@@ -29,7 +29,7 @@ Grundlägende Struktur um die Aussage $A(n)$ zu beweisen:
 		  \begin{align}
 		      1 + 2 + 3 + \ldots + n + (n + 1) =\\
 		      = \frac{n(n + 1)}{2} + (n+1)       & \text{ — P(n) Induktionsvor. }\\
-		      = \frac{n(n + 1)}{2} + \frac{2(n + 1)}{2}  & \text{—arith}\\
-		      = \frac{(n+1)*((n+1)+1)}{2}        & \text{—arith}
+		      = \frac{n(n + 1)}{2} + \frac{2(n + 1)}{2}  & \text{ — arith}\\
+		      = \frac{(n+1)*((n+1)+1)}{2}        & \text{ — arith}
 		\end{align}
-		qed.
+		\qed
