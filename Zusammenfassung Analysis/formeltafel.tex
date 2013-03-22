@@ -141,20 +141,27 @@ $\tan \alpha = \frac{\sin \alpha}{\cos \alpha} = \frac{y}{x}$
 
 \subsection{Integrale}
 \subsubsection*{Integralregeln}
-Es gelte: $\int f(x) \, dx = F(x)$
+Es gelte: $\int f(x) \, dx = F(x) + C$
 \begin{itemize}[leftmargin=*]
+	\item $\int f(x)+g(x) \,dx = \int f(x) \,dx + \int g(x) \,dx$
+	\item $\int a \cdot f(x) \,dx = a \cdot \int f(x) \,dx$\\
+	
 	\item $\int u'\cdot v dx = uv - \int u \cdot v' dx$
-	\item $\int f(x) dx = \int f(g(t)) \cdot g'(t) dt, \; x=g(t), dx = g'(t) dt$\newline\hfill
+	\item $\int f(x) dx = \int f(g(t)) \cdot g'(t) dt, \; x=g(t), dx = g'(t) dt$\\
+	
 	\item $\int f(a + x) \,dx = F(a + x)$
 	\item $\int f(a - x) \,dx = -F(a-x)$
 	\item $\int f(-x) \,dx = -F(-x)$
 	\item $\int f(\alpha x) \,dx = \frac{1}{\alpha}F(\alpha x)$
 	\item $\int \frac{g'(x)}{g(x)} \, dx = \ln|g(x)|$
 	\item $\int g(x)g'(x) \, dx = \frac{1}{2}g(x)^2$\\
+	
 	\item $|\int f(x)| \leq \int |f(x)|$ (wenn f, Riemann-Integrable ist)
 \end{itemize}
 \subsubsection*{typische Integrale}
 \begin{itemize}[leftmargin=*]
+	\item $\int a \,dx = ax$
+	\item $\int x^a \,dx = \frac{1}{a+1} x^{a+1}$
   	\item $\int \frac{1}{x} \,dx = \ln |x|$
 	\item $\int \frac{1}{x^2} \,dx = -\frac{1}{x}$
   	\item $\int \frac{1}{x+a} \,dx = \ln |x+a|$
@@ -169,7 +176,9 @@ Es gelte: $\int f(x) \, dx = F(x)$
 	\frac{b(ax+b)^{n+1}}{(n+1)a^2}$
 	\item $\int \frac{ax + b}{px + q} \,dx = \frac{ax}{p} + \frac{bp - aq}{p^2} \ln
 	|pq+q|$
-	\item $\int \frac{1}{a^2 + x^2} \,dx = \frac{1}{a} \arctan(\frac{x}{a})$
+	\item $\int \frac{1}{\sqrt{1-x^2}} = \arcsin(x)$
+	\item $\int \frac{1}{a^2 + x^2} \,dx = \frac{1}{a} \arctan(\frac{x}{a})$;
+			$\int \frac{1}{1+x^2} \,dx = \arctan(x)$
 	\item $\int \frac{1}{a^2 - x^2} \,dx = \frac{1}{2a} \ln \left | \frac{a+x}{a-x}
 	\right |$
 	\item $\int \sqrt{x} \,dx = \frac{2}{3}\sqrt{x^3}$
@@ -182,7 +191,7 @@ Es gelte: $\int f(x) \, dx = F(x)$
 \begin{itemize}[leftmargin=*]
 	\item $\int \sin(ax) \,dx = -\frac{1}{a}\cos(ax)$
 	\item $\int \cos(ax) \,dx = \frac{1}{a}\sin(ax)$
-	\item $\int \sin(ax)^2 \,dx = \frac{x}{2} - \frac{sin(2ax)}{4a}$
+	\item $\int \sin^2(ax) \,dx = \frac{x}{2} - \frac{sin(2ax)}{4a}$
 	\item $\int \frac{1}{\sin^2 x} \,dx = -\cot x$
 	\item $\int x \sin(ax) \,dx = \frac{\sin(ax)}{a^2} - \frac{x \cos(ax)}{a}$
 	\item $\int \cos^2(ax) \,dx = \frac{x}{2} + \frac{\sin(2ax)}{4a}$
@@ -212,6 +221,13 @@ Es gelte: $\int f(x) \, dx = F(x)$
 	\item $\int x \ln(x) \,dx = \frac{1}{2} x^2 (\ln(x) - \frac{1}{2})$
 	\item $\int_{-\infty}^\infty e^{-\frac{1}{a}x^2} \,dx = \sqrt{a \pi}$
 \end{itemize}
+
+\subsubsection*{Rotationskörper}
+\begin{itemize}[leftmargin=*]
+	\item Volumen = $\pi \int_a^b (f(x))^2 \,dx$
+	\item Oberfläche = $2 \pi \int_a^b f(x) \sqrt{1 + (f'(x))^2} \,dx$
+\end{itemize}
+
 
 \subsection{Reihen}
 \begin{itemize}[leftmargin=*]
