@@ -15,6 +15,10 @@ Existiert der Grenzwert, so konvergiert die Funktion, andernfalls divergiert sie
 Der Grenzwert existiert nicht wenn die Funktion eine Division durch 0 enhält oder 
 wenn er gegen $\infty$, resp. $-\infty$ divergiert.
 
+Ein mit stetigen Fkt. gebildeter rationaler Ausdruck ist, soweit definiert, wieder stetig.
+
+Tipp: Polyname sind immer stetig.
+
 \subsection{(Punktweise) Stetigkeit}
 Die Definition für punktweise Stetigkeit ist die gleiche, wie die für
 $\lim_{x \to a} f(x) = b$ (siehe die Definition gerade über diesem Abschnitt).
@@ -45,7 +49,7 @@ Es gelten folgenden Eigenschaften:
 \subsection{Gleichmässige Stetigkeit}
 Sei $f: D \to \R$, $D \subseteq \R$, dann ist $f$ genau dann stetig wenn gilt:
 \[
-\forall \epsilon > 0 \exists \delta > 0 \forall x,x_0 \in D: |x - x_0| < \delta
+\forall \epsilon > 0 \, \exists \delta > 0 \, \forall x,x_0 \in D: |x - x_0| < \delta
 \Rightarrow |f(x) - f(x_0)| < \epsilon
 \]
 
@@ -108,6 +112,7 @@ aber von $\lim_{x \to a} \frac{f(x)}{g(x)}$ trotzdem.
 
 \subsection{Tipps zur Stetigkeit}
 \begin{itemize}
+	\item Stetig ergänzbar heisst, das der Bruch der Fkt. gekürzt werden kann.
   \item Um zu zeigen das eine Funktion mit mehreren Parameter in einem Punkt \emph{nicht} stetig ergänzbar ist
 	hilft es häufig die Parameter gleich zu setzen. (Häufig geht dann der Limes nicht gegen den gesuchten Punkt
 	 $\Rightarrow$ die Funktion ist \emph{nicht} stetig ergänzbar.)

@@ -86,3 +86,12 @@ Konvergenzradius $r$:
 $r = \frac{1}{\limsup_{n\to\infty} \sqrt[n]{\|a_n\|}}$ (Wurzelkriterium) bzw.
 $r = \lim_{n\to\infty} \left | \frac{a_n}{a_{n+1}} \right |$
 (Quotientenkriterium).
+
+\subsubsection{Bsp: Von Bruch Reihe finden}
+\begin{gather*}
+	\frac{1}{x-5} = \frac{1}{5} \cdot \frac{1}{(\frac{x}{5})-1} 
+	= - \frac{1}{5} \cdot \frac{1}{1-(\frac{x}{5})}
+	= - \frac{1}{5} \cdot \sum_{k=0}^{\infty}(\frac{x}{5})^k \\
+	= \sum_{k=0}^\infty - \frac{1}{5} (\frac{x}{5})^k
+	\quad \text{mit } |\frac{x}{5}| < 1 \Rightarrow |x| < 5
+\end{gather*}
