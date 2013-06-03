@@ -5,15 +5,15 @@
 \subsection{Binomialkoeffizient}
 \[ \binom nk = \frac{n!}{k!\,(n-k)!} \quad \mbox{für }\ 0\leq k\leq n \]
 
-\subsection{Argument}
-\[
-	\arg(x,y) := \begin{cases}
-		\arctan(\frac{y}{x}) & x \geq 0 \\
-		-\arctan(\frac{y}{x}) & x < 0 \\
-		\frac{\pi}{2} & x=0, y < 0 \\
-		\frac{3\pi}{2} & x = 0, y > 0
-	\end{cases}
-\]
+%\subsection{Argument} % don't think that this was ever mentioned in the lecture (DK)
+%\[
+%	\arg(x,y) := \begin{cases}
+%		\arctan(\frac{y}{x}) & x \geq 0 \\
+%		-\arctan(\frac{y}{x}) & x < 0 \\
+%		\frac{\pi}{2} & x=0, y < 0 \\
+%		\frac{3\pi}{2} & x = 0, y > 0
+%	\end{cases}
+%\]
 
 \subsection{Kreisfunktionen}
 {\footnotesize
@@ -64,10 +64,12 @@ $\tan \alpha = \frac{\sin \alpha}{\cos \alpha} = \frac{y}{x}$
 	\item $\cos(2\alpha) = \cos^2(\alpha) - \sin^2(\alpha) = 2 \cos^2(\alpha) - 1
 	= 1 - 2 \sin^2(\alpha)$
 	\item $\tan(2\alpha) = \frac{2 \tan(\alpha)}{1 - \tan^2(\alpha)}$
+	\item $\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha))}$
 \end{itemize}
 
 \subsection{Hyperbelfunktionen}
 \begin{itemize}[leftmargin=*]
+	\item $\cosh^2(x) - \sinh^2(x) = 1$
 	\item $\sinh(x) = \frac{1}{2}(e^x - e^{-x}) = -i \sin(ix)$
 	\item $\cosh(x) = \frac{1}{2}(e^x + e^{-x}) = \cos(ix)$
 	\item $\tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^x - e^{-x}}{e^x +
@@ -146,22 +148,28 @@ Es gelte: $\int f(x) \, dx = F(x) + C$
 	\item $\int f(x)+g(x) \,dx = \int f(x) \,dx + \int g(x) \,dx$
 	\item $\int a \cdot f(x) \,dx = a \cdot \int f(x) \,dx$\\
 	
-	\item $\int u'\cdot v dx = uv - \int u \cdot v' dx$
-	\item $\int f(x) dx = \int f(g(t)) \cdot g'(t) dt, \; x=g(t), dx = g'(t) dt$\\
-	
-	\item $\int f(a + x) \,dx = F(a + x)$
-	\item $\int f(a - x) \,dx = -F(a-x)$
-	\item $\int f(-x) \,dx = -F(-x)$
-	\item $\int f(\alpha x) \,dx = \frac{1}{\alpha}F(\alpha x)$
-	\item $\int \frac{g'(x)}{g(x)} \, dx = \ln|g(x)|$
-	\item $\int g(x)g'(x) \, dx = \frac{1}{2}g(x)^2$\\
+	\item $\int u'\cdot v dx = uv - \int u \cdot v' dx$ (partielle Int.)
+	\item $\int f(x) dx = \int f(g(t)) \cdot g'(t) \,dt$ mit $x=g(t),\, \frac{dx}{dt} 
+		= g'(x), \,dx = g'(t) dt$ (Subsitution)
+	\todo{unsicher ob das stimmt} %todo: Unischer, ob Substitution stimmt
+	\\
+	\item $\int \frac{A}{x-x_1} + \frac{b}{x-x_2} = A \int \frac{1}{x-x_1} +
+		B \int \frac{1}{x-x_1} = A(\ln|x-x_1|+C) + B(\ln|x-x_2|+C)$ (nach Subtituion beim letzten Gleich)
+	\\
+
+% Weren't useful until now for me (DK)
+%	\item $\int f(a + x) \,dx = F(a + x)$
+%	\item $\int f(a - x) \,dx = -F(a-x)$
+%	\item $\int f(-x) \,dx = -F(-x)$
+%	\item $\int f(\alpha x) \,dx = \frac{1}{\alpha}F(\alpha x)$
+%	\item $\int \frac{g'(x)}{g(x)} \, dx = \ln|g(x)|$
+%	\item $\int g(x)g'(x) \, dx = \frac{1}{2}g(x)^2$\\
 	
 	\item $|\int f(x)| \leq \int |f(x)|$ (wenn f, Riemann-Integrable ist)
 \end{itemize}
 \subsubsection*{typische Integrale}
 \begin{itemize}[leftmargin=*]
-	\item $\int a \,dx = ax$
-	\item $\int x^a \,dx = \frac{1}{a+1} x^{a+1}$
+	\item $\int a x^b \,dx = \frac{a}{b+1} x^{b+1}$ ($\int a \,dx = ax$)
   	\item $\int \frac{1}{x} \,dx = \ln |x|$
 	\item $\int \frac{1}{x^2} \,dx = -\frac{1}{x}$
   	\item $\int \frac{1}{x+a} \,dx = \ln |x+a|$
@@ -170,7 +178,8 @@ Es gelte: $\int f(x) \, dx = F(x) + C$
   	\item $\int \frac{1}{(x+a)^2} \,dx = - \frac{1}{x+a}$
   	\item $\int \frac{1}{\sqrt{x}} \,dx = 2 \sqrt{x}$
 	\item $\int \frac{1}{ax+b} \,dx = \frac{1}{a} \ln |ax+b|$
-	\item $\int \frac{1}{1 + x^2} \,dx = \frac{1}{2} \ln |1 + x^2|$
+	\item $\int \frac{1}{1 + x^2} \,dx = \arctan(x)$ 
+			%= \frac{1}{2} \ln |1 + x^2|$ (semms wrong (DK))
 	\item $\int(ax + b)^n \,dx = \frac{(ax + b)^{n+1}}{(n + 1)a}, (n \neq -1)$
 	\item $\int x(ax+b)^n \,dx = \frac{(ax + b)^{n+2}}{(n+2)a^2} -
 	\frac{b(ax+b)^{n+1}}{(n+1)a^2}$
@@ -178,7 +187,6 @@ Es gelte: $\int f(x) \, dx = F(x) + C$
 	|pq+q|$
 	\item $\int \frac{1}{\sqrt{1-x^2}} = \arcsin(x)$
 	\item $\int \frac{1}{a^2 + x^2} \,dx = \frac{1}{a} \arctan(\frac{x}{a})$;
-			$\int \frac{1}{1+x^2} \,dx = \arctan(x)$
 	\item $\int \frac{1}{a^2 - x^2} \,dx = \frac{1}{2a} \ln \left | \frac{a+x}{a-x}
 	\right |$
 	\item $\int \sqrt{x} \,dx = \frac{2}{3}\sqrt{x^3}$
@@ -202,6 +210,7 @@ Es gelte: $\int f(x) \, dx = F(x) + C$
 	\item $\int \arcsin(x) \,dx = x \arcsin(x) + \sqrt{1 - x^2}$
 	\item $\int \arccos(x) \,dx = x \arccos(x) - \sqrt(1-x^2)$
 	\item $\int \arctan(x) \,dx = x \arctan(x) - \frac{1}{2} \ln(1+x^2)$
+	\item $\int_0^\infty \cos(x^2) \,dx = \frac{\sqrt{\frac{\pi}{2}}}{2} \approx 0.620657$
 \end{itemize}
 
 \subsubsection*{Hyperbelfunktionen}
@@ -224,10 +233,10 @@ Es gelte: $\int f(x) \, dx = F(x) + C$
 
 \subsubsection*{Rotationskörper}
 \begin{itemize}[leftmargin=*]
-	\item Volumen = $\pi \int_a^b (f(x))^2 \,dx$
+	\item Volumen x-Achse $= \pi \int_a^b (f(x))^2 \,dx$
+	\item (Volumen y-Achse $= 2\pi \int_a^b x \cdot f(x) \,dx$)
 	\item Oberfläche = $2 \pi \int_a^b f(x) \sqrt{1 + (f'(x))^2} \,dx$
 \end{itemize}
-
 
 \subsection{Reihen}
 \begin{itemize}[leftmargin=*]
@@ -303,8 +312,9 @@ Es gelte: $\int f(x) \, dx = F(x) + C$
 	\item $\lim_{n \to \infty} a^n n^k \rightarrow 0, |a| < 1, k$ fest
 	\item $\lim_{n \to \infty} n(\sqrt[n]{a} - 1) \rightarrow \ln a, a > 0$
 	\item $\lim_{n \to \infty} \left( 1+\frac{x}{n} \right)^n = e^x \quad$
-	\item $\lim_{n \to \infty} \sqrt[n]{n} = 1$
 	\item $\lim_{n \to \infty} n^p q^n = 0 \qquad p \in \N \text{ und } 0 < q < 1$
+	\item $\lim_{n \to \infty} \arctan{n} \rightarrow \frac{\pi}{2}$
+	\item $\lim_{n \to -\infty} \arctan{n} \rightarrow -\frac{\pi}{2}$
 	\item $\lim_{x \to \infty} \sqrt{x^2-x}-x = \frac{1}{2}$ \newline{\small (Lösungsansatz mit Taylorreihe
 	($\sqrt{1-x} = 1 + \frac{x}{2}+O(x^2)$): $\sqrt{x^2-x}-x = x(\sqrt{1-\frac{1}{x}}-1) =
 	x((1+\frac{1}{2x}+O(\frac{1}{x^2}))-1) = \frac{1}{2}+O(\frac{1}{x}) \underset{n \to \infty}{\longrightarrow} \frac{1}{2}$ )}
@@ -320,7 +330,7 @@ Es gelte: $\int f(x) \, dx = F(x) + C$
 	\item $\lim_{x \to 0} \frac{\sin(x)}{x} = 1$ 
 	\item $\lim_{x \to 0} \frac{1-\cos(x)}{x} = 0 \quad$ 
 	\item $\lim_{x \to 0} \frac{\log_a(1+x)}{x} = \frac{1}{\ln a}$
-	\item $\lim_{x \to 0} x^\alpha \ln x = 0 \qquad \alpha > 0$
+	%\item $\lim_{x \to 0} x^\alpha \ln x = 0 \qquad \alpha > 0$ not used (DK)
 \end{itemize}
 
 \subsection{Linienintegral}
@@ -370,14 +380,14 @@ Es gelte: $\int f(x) \, dx = F(x) + C$
   \item $a < b \Rightarrow a + c < b + c$ und $a - c < b - c$
   \item $a < b$ und $c > 0 \Rightarrow \frac{a}{c} < \frac{b}{c}$
   \item $a < b$ und $c < 0 \Rightarrow \frac{a}{c} > \frac{b}{c}$ 
-  \item Dreiecksungleichung für reelle Zahlen: $|a+b| \le |a|{+}|b|$ %Quelle Wikipedia: http://de.wikipedia.org/wiki/Dreiecksungleichung#Dreiecksungleichung_f.C3.BCr_reelle_Zahlen
+  \item $\Delta$-Ungleichung für reelle Zahlen: $|a+b| \le |a|{+}|b|$ %Quelle Wikipedia: http://de.wikipedia.org/wiki/Dreiecksungleichung#Dreiecksungleichung_f.C3.BCr_reelle_Zahlen
   \item Cauchy-Schwarz Ungleichung: $|x \cdot y| \leq \|x\| \cdot \|y\|, \; x,y \in \R^n$
 \end{itemize}
 
 \subsection{Logarithmen}
 \begin{itemize}[leftmargin=*]
   \item $e^{-\inf} = 0$
-  \item $e^0 = 1$
+  \item $e^0 = 1$ ($\Rightarrow 0 = \ln(1)$)
   \item $e^1 = e =  2.718281828$
   \item $e^{\inf} = \inf$
 \end{itemize}
@@ -436,11 +446,6 @@ $\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} - 1 = 0$.
 		   &   $ S = 4 \pi r^2 $ 
 	\end{tabular}
 	\end{multicols}
-
- \subsubsection*{Rotationskörper}
- Rotation um die x Achse $V=\pi \int_a^b f(x)^2 dx.$\\
- Rotation um die y Achse $V=2\pi \int_a^b x \cdot f(x) dx.$
-
 
 
 \subsection{Ausklammern}
