@@ -18,19 +18,30 @@ $\int F'(g(x)) g'(x)dx = F(g(x))$
 	\item Ersetze im Ergebnis $u$ durch $g(x)$
 \end{enumerate}
 
+\subsubsection{Tipps: Substitution}
+Für Integrale, die...
+\begin{itemize}
+	\item ...$\sqrt{a^2-x^2}$ enthalten verwende $u = a^2 - x^2$ (eher bei ungeraden
+		Potenzen) oder $x=a \sin\theta$.
+	\item ...$\sqrt{a^2 + x^2}$ enthalten, verwende $u = a^2 + x^2$ oder 
+		$x = a \sinh \theta$. ($1 + \sinh^2\theta = \cosh^2\theta$)
+	\item ...$\sqrt{x^2-a^2}$ enthalten, verwende $x = a \cosh\theta$.
+\end{itemize}
 
-\subsubsection{Integrale mit Parametern}
-	Sei $h: \R^2 \to \R$ stetig und partiell nach $t$ diffbar mit stetiger Ableitungsfunktion. Betrachte 
-	\[ u(y) = \int_0^y h(x,y) \; \rmd x \]
-	Dann ist $u \in C^1(\R)$ und für die Ableitung gilt
-	\[ \dot{u}(y) = h(x,y)|_{x=y} + \int_0^y \frac{\partial h}{\partial y} (x,y) \; \rmd x \]
+Bsp zu 1. Punkt:
 
-\subsubsection{Beispiel: einfaches Integral}
-Das Integral $\int_{-2}^1 x^2 \,dx$ berechnet die blaue Fläche die durch die Funktion $f(x) = x^2$ beschränkt wird.
-$F(x)$ sei die Stammfunktion von $f(x)$,  generell berechnen wir $\int x^y \,dx = \frac{x^{(y+1)}}{y+1}$, somit $F(x) = \frac{x^3}{3}$.
-Somit $\int_{-2}^1 x^2 \,dx = F(x) \left |_{-2}^1 \right. = F(1) - F(-2) =  \frac{1^3}{3} -  \frac{-2^3}{3} = \frac{1}{3} +  \frac{8}{3} = 3.$
+$\int x^3 \frac{1}{\sqrt{1-x^2}} \,dx = -\frac{1}{2} \int x^2 u^{-\frac{1}{2}} \,du 
+= -\frac{1}{2} \int (1-u)u^{-\frac{1}{2}} \,du = \dots$
 
-\includegraphics[scale=1]{integral_x2.png}
+mit $u = 1-x^2 \Rightarrow du = -2x\,dx \Rightarrow -\frac{1}{2}\,du = x\,dx$
+
+%\subsubsection{Beispiel: einfaches Integral}
+%Das Integral $\int_{-2}^1 x^2 \,dx$ berechnet die blaue Fläche die durch die Funktion $f(x) = x^2$ beschränkt wird.
+%$F(x)$ sei die Stammfunktion von $f(x)$,  generell berechnen wir $\int x^y \,dx = \frac{x^{(y+1)}}{y+1}$, somit $F(x) = \frac{x^3}{3}$.
+%Somit $\int_{-2}^1 x^2 \,dx = F(x) \left |_{-2}^1 \right. = F(1) - F(-2) =  \frac{1^3}{3} -  \frac{-2^3}{3} = \frac{1}{3} +  \frac{8}{3} = 3.$
+%
+%\includegraphics[scale=1]{integral_x2.png} 
+% Todo: ev. Grafik entfernen
 
 \subsubsection{Beispiel: Substitution}
 $\int_0^2 x \sqrt{x+1}^3 \,dx$
@@ -50,3 +61,10 @@ Die Wurzel wird substituiert: $u = g(x) = \sqrt{x+1}$.
 	[\frac{2}{7}\sqrt{x+1}^7 - \frac{2}{5}\sqrt{x+1}^5]_{1}^{\sqrt{3}} = \ldots = \frac{144}{35}\sqrt{3} +
 	\frac{4}{35}$
 \end{enumerate}
+
+
+\subsubsection{Integrale mit Parametern}
+	Sei $h: \R^2 \to \R$ stetig und partiell nach $t$ diffbar mit stetiger Ableitungsfunktion. Betrachte 
+	\[ u(y) = \int_0^y h(x,y) \; \rmd x \]
+	Dann ist $u \in C^1(\R)$ und für die Ableitung gilt
+	\[ \dot{u}(y) = h(x,y)|_{x=y} + \int_0^y \frac{\partial h}{\partial y} (x,y) \; \rmd x \]
