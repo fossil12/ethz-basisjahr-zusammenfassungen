@@ -4,7 +4,7 @@ Wir betrachten die folgende Einteilung des Intervals $[a,b]$:\[
 E: [a,b] = \bigcup_{k=1}^{N}[x_{k-1}, x_k] \text{ mit } x_k = a + k \cdot \frac{b-a}{N}.
 \]
 Die Feinheit dieser Zerlegung ist:\[
-\delta(E) \equiv max\{x_k - x_{k-1}|k = 1...N\} = \frac{b-a}{N} \xrightarrow{N \to \infty} = 0
+\delta(E) \equiv \max_{k=1}^{N}\{x_k - x_{k-1}\} = \frac{b-a}{N} \xrightarrow{N \to \infty} = 0
 \]
 $\xi_i$ sein ein Punkt auf dem Interval $[x_{i-1}, x_i]$, somit $\xi_i \in[x_{i-1}, x_i]$.\\
 
@@ -28,7 +28,7 @@ k\frac{b-a}{N})} \cdot \frac{b-a}{N}
 Die Funktion $f$ sei Riemann Integrabel wenn es ein $I \in \R$ gibt so dass: $\forall \epsilon > 0, \exists \nu > 0$ so dass \[
 |I| - \epsilon < \sum (f,E,\xi) < |I| + \epsilon
 \]
-für jede Einteilung $E$ von $[a,b]$ mit $\delta(E) < \nu$, und für jede Wahl von Zwischenpunkten $\xi$.\\
+für jede Einteilung $E$ von $[a,b]$ mit $\delta(E) < \nu$, und für jede Wahl von Zwischenpunkten $\xi$. (2 verschiedene $\epsilon$ für Bew. wählen)\\
 % Lamma aus http://www.mat.univie.ac.at/~kriegl/Skripten/math4ilak2/node18.html
 Jede monotone Funktion und jede stetige Funktion ist Riemann-integrierbar.
 \subsection{Beispiel}
