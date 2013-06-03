@@ -1,16 +1,31 @@
 \section{Differentialgleichung (DGL)}
 \subsection{Klassifizierung der DGL}
 Für die Vorlesung relevante DGL:
-* lineare, homogene DGL 1. Ordnung mit  konstante Koeffizienten
-* lineare, inhomogene DGL 1. Ordnung mit  konstante Koeffizienten
-* nicht lineare, homogene DGL 1. Ordnung mit  konstante Koeffizienten
-* lineare, homogene DGL 2. Ordnung mit  konstante Koeffizienten 
-* lineare, inhomogene DGL 2. Ordnung mit  konstante Koeffizienten 
-* In ausnahmenfälle linare DGL höherer Ordnung
+\begin{itemize}
+	\item lineare, homogene DGL 1. Ordnung mit konstanten Koeff.
+	\item lineare, inhomogene DGL 1. Ordnung mit  konstante Koeff.
+	\item nicht lineare, homogene DGL 1. Ordnung mit  konstanten Koeffizienten
+	\item lineare, homogene DGL 2. Ordnung mit  konstanten Koeff.
+	\item lineare, inhomogene DGL 2. Ordnung mit  konstanten Ko.
+	\item In ausnahmenfälle linare DGL höherer Ordnung
+\end{itemize}
 
 Generell ist zu sagen das inhomogene DGL immer gelöst werden in dem wir zuerst die homogene DGL lösen (in dem wir g(x) = 0) setzen. Danach berechnen wir die inhomogenen Gleichung (den Ansatz wählen wir in dem wir die Form von g(x) berücksichtigen \ref{sec:Ansaetze}). Für die allgemeine Lösung rechnen wird die beiden Lösungen zusammen. 
 
 Sind Anfangswerte gegeben setzten wir diese in die Gleichung oder das Gleichungssystem ein und reduzieren somit die Variablen in der Gleichung.
+
+\subsubsection{Nullstellen berechnen}
+\begin{enumerate}
+	\item $ax+b = 0 \Rightarrow$ nach $x$ auflösen
+	\item $ax^2 + bx + c = 0 \Rightarrow$ Mitternachtsformel (FoSa)
+	\item $\sum_{i=0}^{n} = 0$ mit $n > 2 \Rightarrow$
+		\begin{itemize}
+			\item Eine Nullstellte durch probieren finden
+			\item Polynomdivision
+			\item wiederholen oder (2.) anwenden
+		\end{itemize}
+\end{enumerate}
+
 
 \subsection{Lineare DGL 1. Ordnung ($y' + f(x) \cdot y = g(x)$)}
 \subsubsection{Variation der Konstanten, homogen}
