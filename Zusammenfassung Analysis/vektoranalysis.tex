@@ -1,12 +1,20 @@
 \section{Vektoranalysis}
-\begin{definition}[Vektorfeld]
-Die Abbildung $\vec{v}(\vec{r}): \R^n \to \R^n$ ist ein Vektorfeld. Es weist jedem
-Vektor $\vec{r}$ einen Vektor $\vec{v}(\vec{r})$ zu.
-\end{definition}
 
-\begin{definition}[Skalarfeld]
-Ist eine Abbildung der Form $f: \R^n \to \R$. Es existiert wenn das Vektorfeld wirbelfrei/konservativ ist. Ergibt ein geschlossener Weg im Vektorfeld nicht null so existiert kein skalares Feld (jedoch nicht umbedingt umgekehrt).
-\end{definition}
+\begin{itemize}
+	\item Skalarfunktion: $f: \R^n \rightarrow \R$ mit $n \geq 1$
+	\item Paramertrisierung: $f: \R \rightarrow \R^n$ mit $n \geq 1$
+	\item Vektorfeld: $f: \R^n \rightarrow \R^m$ mit $n, m \geq 1$
+\end{itemize}
+
+
+%\begin{definition}[Vektorfeld]
+%Die Abbildung $\vec{v}(\vec{r}): \R^n \to \R^n$ ist ein Vektorfeld. Es weist jedem
+%Vektor $\vec{r}$ einen Vektor $\vec{v}(\vec{r})$ zu.
+%\end{definition}
+%
+%\begin{definition}[Skalarfeld]
+%Ist eine Abbildung der Form $f: \R^n \to \R$. Es existiert wenn das Vektorfeld wirbelfrei/konservativ ist. Ergibt ein geschlossener Weg im Vektorfeld nicht null so existiert kein skalares Feld (jedoch nicht umbedingt umgekehrt).
+%\end{definition}
 
 \begin{definition}[Gradient]
 Ist $f: \R^n \to \R$ (Skalarfeld), so ist der Gradient von $f$ der Vektor
@@ -39,22 +47,22 @@ Eigenschaften:
 \end{itemize}
 \end{definition}
 
-\begin{definition}[Rotor / Rotation]
-Ist $\vec{v}$ ein Vektorfeld im $\R^3$, so ist die Rotation von $\vec{v} = (P, Q, R)^T$ das Vektorfeld
-$\vec{w} = \rot \vec{v} = \begin{pmatrix}
-R_y - Q_z\\
-P_z - R_x\\
-Q_x - P_y
-\end{pmatrix}$
-\end{definition}
-
-\begin{definition}[Vektorpotential]
-Ein Vektorfeld $\vec{v}$ heisst Vektorpotential zu $\vec{w}$, falls $\vec{w} = \rot \vec{v}$.
-\end{definition}
-
-\begin{definition}[Wirbelfrei / konservativ]
-Ist $\vec{v}$ ein Vektorfeld mit $\rot \vec{v} = 0$, so nennt man $\vec{v}$ wirbelfrei. Auch: Das Vektorfeld ist \emph{konservativ}.
-\end{definition}
+%\begin{definition}[Rotor / Rotation] Nicht Prüfungsstoff
+%Ist $\vec{v}$ ein Vektorfeld im $\R^3$, so ist die Rotation von $\vec{v} = (P, Q, R)^T$ das Vektorfeld
+%$\vec{w} = \rot \vec{v} = \begin{pmatrix}
+%R_y - Q_z\\
+%P_z - R_x\\
+%Q_x - P_y
+%\end{pmatrix}$
+%\end{definition}
+%
+%\begin{definition}[Vektorpotential] (vermutlich) nicht Prüfungsstoff
+%Ein Vektorfeld $\vec{v}$ heisst Vektorpotential zu $\vec{w}$, falls $\vec{w} = \rot \vec{v}$.
+%\end{definition}
+%
+%\begin{definition}[Wirbelfrei / konservativ] (vermutlich) nicht Prüfungsstoff
+%Ist $\vec{v}$ ein Vektorfeld mit $\rot \vec{v} = 0$, so nennt man $\vec{v}$ wirbelfrei. Auch: Das Vektorfeld ist \emph{konservativ}.
+%\end{definition}
 
 \begin{definition}[Divergenz]
 Die Divergenz eines Vektorfelds $\operatorname{div} \vec{K}(x,y,z)$ ist definiert durch:
@@ -144,4 +152,5 @@ zum Rand $\partial B$
 \subsection{Fläche unter Kurve}
 Sei eine Kurve in der Parameterdarstellung (z.B.: $x(t) =sin(2t)$ und $y(t)=cos(3t)$ über $0\leq t \leq \pi$) gegeben. So ist die Fläche $A = \int_0^\pi y\dot{x} \, dt$.
 
-
+\todo{Divergenzsatz / Satz von Gauss | Richtungsgleichung?}
+% Todo: Divergenzsatz / Satz von Gauss | Richtungsgleichung?
