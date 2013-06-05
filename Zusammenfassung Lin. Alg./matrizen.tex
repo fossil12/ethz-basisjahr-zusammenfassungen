@@ -32,9 +32,11 @@
 	\subsection{Matritzenmultiplikation}
 	
     	\[
-    		\E^{n \times m} * \E^{m \times p} 
+    		\E^{n \times m} \cdot \E^{m \times p} 
     		= \E^{n \times p}
     	\]
+    	
+    	
     	
     	Berechnung der Elemente von $\mathbf{C} :\equiv \mathbf{AB}$:
     	
@@ -45,6 +47,7 @@
     	\end{align*}
     	
     	\begin{falg}
+    		\includegraphics[width=\textwidth]{img/matrix_multiplikation.png}
         	\begin{align*}
         		c_{ij} & :\equiv \sum_{k=1}^{n} a_{ik} b_{kj} \\
         		& = a_{i1} b_{1j} + a_{i2} b_{2j} + \cdots + a_{in} b_{nj} \\
@@ -116,7 +119,10 @@
 				% (\alpha \beta)\mA &= \alpha (\beta \mA) \\
 				(\alpha \mA)\mB & = \alpha (\mA \mB) = \mA(\alpha \mB) \\
 				(\alpha + \beta)\mA & = (\alpha \mA) + (\beta \mA) \\
-				\alpha(\mA + \mB) & = (\alpha \mA) + (\beta \mB) \\
+				\alpha(\mA + \mB) & = (\alpha \mA) + (\alpha \mB) \\
+				\mA + \mB &= \mB + \mA &&\text{(Add.kommutativ)}\\
+				(\mA + \mB) + \mC & = \mA + (\mB + \mC) &&\text{(Add. assoziativ)}\\
+				(\mA \mB)\mC & = \mA (\mB \mC) &&\text{(Mult. assoziativ)}\\
 				(\mA + \mB)\mC & = (\mA \mC) + (\mB \mC) \\
 				\mA(\mB + \mC) & = (\mA \mB) + (\mA \mC) \\
 				\\
